@@ -19,7 +19,7 @@
         <input type="text" name="name" data-th-field="*{name}">
         <!-- show error if name is null -->
         <!-- #fields abstraction -->
-        <span data-th-if="${#fields.hasErrors('name')}" data-th-errors="*{name}"></span>
+        <span class="error" data-th-if="${#fields.hasErrors('name')}" data-th-errors="*{name}"></span>
         <br>
         <label for="email">Email</label>
         <input type="email" name="email" data-th-field="*{email}">
